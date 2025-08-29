@@ -37,18 +37,18 @@ void simpleTypes() {
   // fpnum = inum as double; // type casting
 
   // explicit type conversions
-  // inum = fpnum.toInt();
-  // fpnum = inum.toDouble();
+   inum = fpnum.toInt();
+   fpnum = inum.toDouble();
 
   // more type conversions
-  // inum = int.parse(snum);
-  // snum = inum.toString();
+   inum = int.parse(snum);
+   snum = inum.toString();
 }
 
 /*****************************************************************************/
 
 void nullableTypes() {
-  int n = 442; // try initializing with `null`
+  int? n = null; // try initializing with `null`   to declare it a nullabale type need the '?' added to it / cant do var? n = null 
 
   print('n.runtimeType = ${n.runtimeType}');
 
@@ -79,18 +79,18 @@ void complexTypes() {
   print('listOfUnknown.runtimeType = ${listOfUnknown.runtimeType}');
   print('listOfStr2.runtimeType = ${listOfStr2.runtimeType}');
 
-  // print(listOfNum[0] + 10);
-  // print(listOfAll[0] is int);
-  // print(listOfAll[0] + 10); // how to fix this?
+   print(listOfNum[0] + 10);
+   print(listOfAll[0] is int);
+   print((listOfAll[0] as int) + 10); // how to fix this?
 
-  // print(listOfStr[0].length);
-  // print(listOfAll[2] is String);
+   print(listOfStr[0].length);
+   print(listOfAll[2] is String);
   // print(listOfAll[2].length); // how to fix this?
 
-  // listOfUnknown.add('dart');
-  // listOfUnknown.add(42);
-  // listOfUnknown.add(null);
-  // print(listOfUnknown[0].length);
+  listOfUnknown.add('dart');
+  listOfUnknown.add(42);
+  listOfUnknown.add(null);
+//   print(listOfUnknown[0].length);
   // print(listOfUnknown[1].length);
 
   // listOfStr2.add('flutter');
@@ -112,7 +112,7 @@ void constAndFinalVars() {
   final m = [1, 2, 3];
 
   // j = 43;
-  // m.add(4);
+  //  m.add(4);
 
   const k = 42;
   const n = [1, 2, 3];
@@ -120,7 +120,7 @@ void constAndFinalVars() {
   // k = 43;
   // n.add(4);
 
-  // print(identical(i, j));
+   print(identical(i, j));
   // print(identical(m, n));
   // print(identical([1, 2, 3], [1, 2, 3]));
   // print(identical(const [1, 2, 3], const [1, 2, 3]));
