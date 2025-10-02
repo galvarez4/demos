@@ -83,7 +83,7 @@ void records() {
 
   print('point3.x = ${point3.x}, point3.y = ${point3.y}');
 
-  // point1 = point3; // how to fix this?     //can't mix and match a named record to a non-named records
+   point1 = (point3.x, point3.y); // how to fix this?     //can't mix and match a named record to a non-named records; unless specify for it 
   // point3 = point4; // how to fix this?
 
   print('${point5.$1}: point5.x = ${point5.x}, point5.y = ${point5.y}');
@@ -109,7 +109,7 @@ void collections() {
   Set<int> numbers = {1, 2, 3, 4, 5};
   print('\nSet: $numbers');
 
-  numbers.add(3); // Adding a duplicate value
+  numbers.add(3); // Adding a duplicate value       //adding won't do anything
   print('Set after adding duplicate: $numbers');
   
   numbers.remove(2);
@@ -143,6 +143,7 @@ void collections() {
     print('${entry.key} is ${entry.value} years old');
   }
 
+   var ls  =  <list><int>>
   // Collections of collections ...
   var matrix = <List<int>>[
     [1, 2, 3],
