@@ -19,6 +19,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class MemoryLeakBrokenApp extends StatefulWidget {
+  const MemoryLeakBrokenApp({super.key});
+
   @override
   _MemoryLeakBrokenAppState createState() => _MemoryLeakBrokenAppState();
 }
@@ -59,6 +61,8 @@ class _MemoryLeakBrokenAppState extends State<MemoryLeakBrokenApp> {
  *   • Heap stabilizes after GC; no unbounded growth.
  */
 class MemoryLeakFixedApp extends StatefulWidget {
+  const MemoryLeakFixedApp({super.key});
+
   @override
   _MemoryLeakFixedAppState createState() => _MemoryLeakFixedAppState();
 }
@@ -73,8 +77,9 @@ class _MemoryLeakFixedAppState extends State<MemoryLeakFixedApp> {
     _timer = Timer.periodic(const Duration(milliseconds: 100), (_) {
       setState(() {
         _items.insert(0, Random().nextDouble().toString());
-        if (_items.length > 1000)
+        if (_items.length > 1000) {
           _items.removeLast(); // prevent unbounded growth
+        }
       });
     });
   }

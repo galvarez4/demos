@@ -31,8 +31,8 @@ class IncrementableCounter extends StatelessWidget {
         Text('Counter: $_counter'),
         const SizedBox(height: 16),
         ElevatedButton(
-          onPressed: () => print("Increment counter by ${increment} here"),
-          child: Text('+ ${increment}'), 
+          onPressed: () => print("Increment counter by $increment here"),
+          child: Text('+ $increment'), 
         ),
       ],
     );

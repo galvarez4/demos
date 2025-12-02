@@ -43,7 +43,7 @@ void main() {
       void onTap(int r, int c) {
         row = r;
         col = c;
-      };
+      }
 
       await tester.pumpWidget(createBoard(callback: onTap));
 

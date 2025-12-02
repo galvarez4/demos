@@ -14,16 +14,8 @@
 //    confirm the pathology disappears.
 // -----------------------------------------------------------------
 
-import 'dart:async';
-import 'dart:math';
-import 'dart:ui' as ui;
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:performance/cpu_hotspot.dart';
-import 'package:performance/images.dart';
-import 'package:performance/layout.dart';
 import 'package:performance/memleak.dart';
-import 'package:performance/rebuilds.dart';
 
 void main() {
   // 🔄 Change which app runs here

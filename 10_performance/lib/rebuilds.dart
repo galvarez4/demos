@@ -19,6 +19,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class ExcessiveRebuildsBrokenApp extends StatefulWidget {
+  const ExcessiveRebuildsBrokenApp({super.key});
+
   @override
   _ExcessiveRebuildsBrokenAppState createState() =>
       _ExcessiveRebuildsBrokenAppState();

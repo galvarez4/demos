@@ -29,6 +29,8 @@ const _largeImageUrl =
  *   • Record a trace, scroll; notice decode events aligned with jank.
  */
 class ImageDecodeBrokenApp extends StatelessWidget {
+  const ImageDecodeBrokenApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -58,6 +60,8 @@ class ImageDecodeBrokenApp extends StatelessWidget {
  */
 class ImageDecodeFixedApp extends StatelessWidget {
   final _downsampled = _largeImageUrl;
+
+  const ImageDecodeFixedApp({super.key});
 
   @override
   Widget build(BuildContext context) {

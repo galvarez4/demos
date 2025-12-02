@@ -18,6 +18,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class CpuHotspotBrokenApp extends StatelessWidget {
+  const CpuHotspotBrokenApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -71,6 +73,8 @@ int countPrimesSync(int max) {
  *   • UI thread stays below 16 ms; isolate shows workload in CPU profiler.
  */
 class CpuHotspotFixedApp extends StatelessWidget {
+  const CpuHotspotFixedApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

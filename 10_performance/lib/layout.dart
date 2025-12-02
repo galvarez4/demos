@@ -17,6 +17,8 @@
 import 'package:flutter/material.dart';
 
 class LayoutInefficiencyBrokenApp extends StatelessWidget {
+  const LayoutInefficiencyBrokenApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -62,6 +64,8 @@ class LayoutInefficiencyBrokenApp extends StatelessWidget {
  *   • Layout events drop below the 16 ms budget; green frames.
  */
 class LayoutInefficiencyFixedApp extends StatelessWidget {
+  const LayoutInefficiencyFixedApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
